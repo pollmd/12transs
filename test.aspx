@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052) -->
 <html lang="en" style="--lqd-mobile-sec-height: 0px; --lqd-sticky-header-height: 0px; --lqd-sticky-header-placeholder-height: 121px; --lqd-sticky-header-sentinel-top: var(--lqd-sticky-header-placeholder-height);">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -52,7 +51,7 @@
                <div class="w-50percent flex items-center justify-end py-10 link-white link-font-normal link-14">
                   <a href="#consultation" class="btn btn-naked leading-16" rel="nofollow" data-localscroll="true"><span class="btn-txt" data-text="Consultation">Consultation</span></a>
                   <div class="pl-20 ml-20 border-left text-white-10"><a href="#contact" class="btn btn-naked leading-16" rel="nofollow" data-localscroll="true"><span class="btn-txt" data-text="Contact us">Contact us</span></a></div>
-                  <!-- <div class="ld-dropdown-menu link-black flex relative pl-20 ml-20 border-left border-white-10" role="menubar">
+                  <div class="ld-dropdown-menu link-black flex relative pl-20 ml-20 border-left border-white-10" role="menubar">
                      <span class="ld-module-trigger text-14 transition-color collapsed" role="button" data-ld-toggle="true" data-bs-toggle="collapse" data-bs-target="#dropdown-minimenu" aria-controls="dropdown-minimenu" aria-expanded="false" data-bs-toggle-options="{ &quot;type&quot;:  &quot;hoverFade&quot; }"><span class="ld-module-trigger-txt text-white">🇺🇸 English <i class="lqd-icn-ess icon-ion-ios-arrow-down"></i></span></span>
                      <div class="ld-module-dropdown collapse absolute right lqd-dropdown-fade-onhover" id="dropdown-minimenu" aria-expanded="false" role="menuitem">
                         <div class="ld-dropdown-menu-content">
@@ -63,7 +62,7 @@
                            </ul>
                         </div>
                      </div>
-                  </div> -->
+                  </div>
                   <div class="pl-20 ml-20 border-left border-white-10 ld-module-search lqd-module-search-slide-top items-center" data-module-style="lqd-search-style-slide-top">
                      <span class="ld-module-trigger collapsed lqd-module-trigger-txt-left lqd-module-show-icon lqd-module-icon-plain text-14" role="button" data-ld-toggle="true" data-bs-toggle="collapse" data-bs-target="#search-header-top" aria-controls="search-header-top" aria-expanded="false">
                         <span class="ld-module-trigger-txt"></span> 
@@ -336,7 +335,7 @@ We maintain a commitment to every customer and every load, and that starts with 
                               <div class="w-33percent flex mb-30 px-15 md:w-full">
                                  <article class="lqd-lp relative lqd-lp lqd-lp-style-16 text-start post-10007 post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-beauty">
                                     <div class="lqd-lp-img rounded-4 overflow-hidden relative mb-2rem">
-                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/stepdeck.jpg" class="w-full" alt="Blog"></figure>
+                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/truck1.jpg" class="w-full" alt="Blog"></figure>
                                     </div>
                                     <header class="lqd-lp-header mb-1em">
                                        <h2 class="entry-title lqd-lp-title h5 m-0">Step Deck</h2>
@@ -359,13 +358,13 @@ We maintain a commitment to every customer and every load, and that starts with 
                               <div class="w-33percent flex mb-30 px-15 md:w-full">
                                  <article class="lqd-lp relative lqd-lp lqd-lp-style-16 text-start post-10006 post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single tag-business tag-travel">
                                     <div class="lqd-lp-img rounded-4 overflow-hidden relative mb-2rem">
-                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/flatbed.jpg" class="w-full" alt="Blog"></figure>
+                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/truck2.jpg" class="w-full" alt="Blog"></figure>
                                     </div>
                                     <header class="lqd-lp-header mb-1em">
                                        <h2 class="entry-title lqd-lp-title h5 m-0">Flatbed</h2>
                                     </header>
                                     <div class="lqd-lp-excerpt mb-1em">
-                                       <p>Flatbed shipping freight includes anything from construction equipment, pipes, heavy machinery, and more. A flatbed's design allows any type of equipment to be loaded from any angle.</p>
+                                       <p>Flatbed shipping freight includes anything from construction equipment, pipes, heavy machinery, and more. A flatbed’s design allows any type of equipment to be loaded from any angle.</p>
                                     </div>
                                     <footer class="lqd-lp-footer relative z-2">
                                        <a href="#" class="btn btn-naked uppercase tracking-0/1em size-sm font-bold lqd-lp-read-more items-center text-12">
@@ -382,7 +381,7 @@ We maintain a commitment to every customer and every load, and that starts with 
                               <div class="w-33percent flex mb-30 px-15 md:w-full">
                                  <article class="lqd-lp relative lqd-lp lqd-lp-style-16 text-start post-10003 post type-post status-publish format-standard has-post-thumbnail hentry category-blog-single category-lifestyle category-travel tag-spain tag-travel">
                                     <div class="lqd-lp-img rounded-4 overflow-hidden relative mb-2rem">
-                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/canestoga.jpg" class="w-full" alt="Blog"></figure>
+                                       <figure class="relative bg-cover bg-center w-full"><img width="720" height="400" src="./img/truck3.jpg" class="w-full" alt="Blog"></figure>
                                     </div>
                                     <header class="lqd-lp-header mb-1em">
                                        <h2 class="entry-title lqd-lp-title h5 m-0">Canestoga</h2>
