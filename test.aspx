@@ -1,4 +1,54 @@
 <!DOCTYPE html>
+<%@ Import Namespace="System.Net" %> 
+<%@ Import Namespace="System.Net.Mail" %> 
+<script language="c#" runat="server">
+private void btnSend_Click(object sender, System.EventArgs e)
+{           
+
+        MailMessage m = new MailMessage();
+        SmtpClient sc = new SmtpClient();
+        m.From = new MailAddress("admin@12transs.com");               
+        m.To.Add("info@12transs.com");
+        m.Subject = "Email generated from site";
+        m.Body = txtFrom.Text; 
+        sc.Host = "mail.12transs.com";
+        string str1="gmail.com";
+        string str2=txtFrom.Text.ToLower();		
+		if (str2.Contains(str1))
+		{
+		try
+            {
+                sc.Port = 587;
+                sc.Credentials = new System.Net.NetworkCredential(txtFrom.Text,"123");                       
+                sc.EnableSsl = true;
+                sc.Send(m);
+                Response.Write("Email Send successfully");
+            }
+            catch (Exception ex)
+            {
+                Response.Write ("<BR><BR>* Please double check the From Address and Password to confirm that both of them are correct. <br>");
+				Response.Write ("<BR><BR>If you are using gmail smtp to send email for the first time, please refer to this KB to setup your gmail account: http://www.smarterasp.net/support/kb/a1546/send-email-from-gmail-with-smtp-authentication-but-got-5_5_1-authentication-required-error.aspx?KBSearchID=137388");
+				Response.End();
+			}
+		}
+	    else
+		{
+		try
+            {
+                sc.Port = 25;
+                sc.Credentials = new System.Net.NetworkCredential(txtFrom.Text,"123");                       
+                sc.EnableSsl = false;
+                sc.Send(m);
+                Response.Write("Email Send successfully");
+            }
+            catch (Exception ex)
+            {
+                Response.Write ("<BR><BR>* Please double check the From Address and Password to confirm that both of them are correct. <br>");
+				Response.End();
+            }
+		}		                                     
+}
+</script> 
 <html lang="en" style="--lqd-mobile-sec-height: 0px; --lqd-sticky-header-height: 0px; --lqd-sticky-header-placeholder-height: 121px; --lqd-sticky-header-sentinel-top: var(--lqd-sticky-header-placeholder-height);">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -217,10 +267,11 @@ We maintain a commitment to every customer and every load, and that starts with 
                                        <div class="screen-reader-response">
                                           <p role="status" aria-live="polite" aria-atomic="true"></p>
                                        </div>
-                                       <form action="todo/rrrrr/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
+                                       <form id="MailForm" method="post" runat="server" target="_blank">
                                           <div class="row">
                                              <div class="col col-12 py-0"><span class="mb-0 lqd-form-control-wrap relative"><input class="text-black px-2em text-14 font-normal bg-yellow-100" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Your name"> <i class="lqd-icn-ess icon-lqd-user"></i></span></div>
                                              <div class="col col-12 py-0"><span class="mb-0 lqd-form-control-wrap relative"><input class="text-black px-2em text-14 font-normal bg-yellow-100" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email Address"> <i class="lqd-icn-ess icon-lqd-envelope"></i></span></div>
+                                             <asp:TextBox ID="txtFrom" runat="server"></asp:TextBox>
                                              <div class="col col-12 py-0">
                                                 <div class="mb-0 lqd-form-control-wrap relative">
                                                    <div class="lqd-select-dropdown" role="menubar">
@@ -231,6 +282,15 @@ We maintain a commitment to every customer and every load, and that starts with 
                                                    <span tabindex="0" id="ui-id-1-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="ui-id-1-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget text-black text-14 font-normal bg-yellow-100"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span> <span class="ui-selectmenu-text px-2em">How can we help you</span></span>
                                                 </div>
                                              </div>
+
+<div>     
+          <TR><TD align = center><asp:Button ID="btnSend" runat="server"
+              Text="Send" OnClick="btnSend_Click"></asp:Button>				</TR>
+      <TR> <TD colspan = 2> <asp:Label ID="lblStatus" runat="server" forecolor=Green Font-Size="15" Bold = true> 
+          </asp:Label>
+</div>
+
+
                                              <div class="col col-12 py-0"><span class="lqd-form-control-wrap" data-name="acceptance"><span class="lqd-cf-form-control lqd-cf-acceptance"><span class="lqd-cf-list-item"><label><input type="checkbox" name="acceptance" value="1" aria-invalid="false"> <span class="lqd-cf-list-item-label">I agree to the terms of service.</span></label></span></span></span></div>
                                              <div class="col col-12 py-0"><input type="submit" value="get a quote" class="mb-0 font-bold text-secondary bg-primary has-spinner text-16 hover:bg-secondary hover:text-white"></div>
                                           </div>
